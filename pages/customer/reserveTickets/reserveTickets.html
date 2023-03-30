@@ -1,0 +1,38 @@
+<template>
+  <div  class="page-with-input">
+    <link href="./pages/customer/reserveTickets/seat.css" rel="stylesheet">
+    <h2>Make Reservation</h2>
+    <h4> <span id="movie-title"></span>, <span id="date"></span>, <span id="hall"></span></h4>
+    <div  id="seats"></div>
+    <button id="reservation-btn" class="btn btn-primary">Reserve Seats</button>
+    <p id="error" style="color:red"></p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservation-status" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Reservation Status</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>You have reserved the following ticket:</p>
+            <h4 id="reserved-title"></h4>
+            <h4><span id="reserved-date"></span> (<span id="reserved-time"></span>)</h4>
+            <h4 id="reserved-hall"></h4>
+            <h4>Total Price: <span id="price"></span></h4>
+            <p>Tickets</p>
+            <div id="reserved-tickets"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</template>

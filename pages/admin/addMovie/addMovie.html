@@ -1,0 +1,19 @@
+<template>
+  <div class="page-with-input">
+  <h2>Add Movie</h2>
+  <div>
+    <input id="title" type="text" class="bioinput" style="width:50em;" placeholder="add title for movie to add">
+    <button id="findId-btn" class="btn btn-dark">Find IMDB ID</button>
+    <p id="found-title">&nbsp;</p>
+
+  </div>
+  <input id="imdbid" type="text" class="bioinput" placeholder="Add imdb Id">
+  <button id="create-btn" class="btn btn-dark">Create Movie</button>
+  <button id="clr-btn" class="btn btn-dark">Clear</button>
+  <!-- <p int id="result"></p> -->
+  <div id="status" class="alert alert-primary" role="alert" style="display: none;margin-top: 0.5em;">
+    
+  </div>
+  <image src="../../../images/Spin-1s-200px.gif" id="spinner" style="display: none;" />
+</div>
+</template>

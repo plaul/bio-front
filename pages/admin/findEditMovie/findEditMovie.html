@@ -1,0 +1,45 @@
+<template>
+  <style>
+    .row button {
+      margin-top: 1em;
+      padding: 0.5em;
+    }
+
+    .btn-width {
+      width: 100%
+    }
+  </style>
+  <div class="page-with-input">
+    <div style="max-width:90%;">
+      <h1>Find Movie</h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-2">
+          <input id="input-movieid" placeholder="Enter movie-id" />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary" id="btn-getmovie">Get Movie</button>
+        </div>
+      </div>
+      <hr />
+     
+      <div class="row" style="margin-top: 0px;">
+        <div class="col-md-10">
+          <label>Plot in Danish <em>(Only plotDK can be edited)</em></label>
+          <textarea id="plotdk-id" style="width:100%;min-height: 10em;"></textarea>
+        </div>
+        <div class="col-md-2" style="display:flex;align-items:center;justify-content:center;">
+          <div><button id="btn-submit" class="btn btn-dark btn-width">Save Changes</button>
+            <button id="btn-delete" class="btn btn-dark btn-width btn-width">Delete Movie</button>
+          </div>
+        </div>
+       <div id="status" class="alert alert-primary" role="alert" style="display: none;margin-top: 0.5em;"></div>
+        <div class="row">
+          <p id="remaing-properties" class="col-md-10" style="font-size: 10px;">
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+</template>

@@ -1,0 +1,24 @@
+<template>
+  <div class="page-with-input">
+  <h2>All Movies</h2>
+  <table class="table" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Runtime</th>
+        <th>Actors</th>
+        <th>Imdb Rating</th>
+        <th>-</th>
+      </tr>
+    </thead>
+    <tbody id="tbl-body">
+      <p id="error"></p>
+      <ul id="car-paginator" class="pagination justify-content-center" style="margin-top:10px;"></ul>
+      <div id="spinner" class="spinner-border" style="display:none; min-height: 2em;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </tbody>
+  </table>
+</div>
+</template>

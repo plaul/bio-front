@@ -1,0 +1,50 @@
+<template>
+  <style>
+    .zero-margin {margin: 0px;}
+  </style>
+
+  <div class="page-with-input">
+    <div style="margin-left:10%;margin-right: 10%;">
+      <div style="max-width:700px;">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Login</h1>
+          </div>
+          <p id="info-txt" style="font-style: italic;font-size: larger;"></p>
+
+        </div>
+        <div class="row" style="margin-top: 2em;">
+          <div class="col-md-2">
+            <label for="username"><b>Username</b></label>
+          </div>
+          <div class="col-md-8">
+            <input type="text" placeholder="Enter Username" id="username" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label for="password"><b>Password</b></label>
+          </div>
+          <div class="col-md-8">
+            <input type="password" placeholder="Enter Password" id="password" required>
+          </div>
+        </div>
+        <div class="row" style="margin-top:2em">
+          <div class="col-md-3 d-flex align-items-center">
+            <button id="login-btn" style="width:100%" class="btn btn-dark zero-margin">Login</button>
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="zero-margin">Not yet a member
+              <a href="/signup" data-navigo>Sign Up </a> </span>
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <button class="btn btn-link zero-margin" onClick="alert('This is not, and will not be, implemented')">Forgot
+              password
+            </button>
+          </div>
+        </div>
+      </div>
+      <p id="error" style="color:red"></p>
+    </div>
+  </div>
+</template>

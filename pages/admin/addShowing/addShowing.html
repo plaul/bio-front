@@ -1,0 +1,45 @@
+<template>
+  <style>
+    
+    input {margin-top: 0px !important;}
+  </style>
+  <div class="page-with-input">
+    <h2>Add Showing</h2>
+    <form id="bookingForm" class="row g-3">
+      <div class="row" style="width:70%">
+        <div class="col-md-4">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input  type="date" class="form-control" id="startDate" required>
+        </div>
+        <div class="col-md-4">
+            <label for="numberOfDays" class="form-label">Number of Days</label>
+            <input type="number" class="form-control" id="numberOfDays" min="1" required>
+        </div>
+        <div class="col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price"  required>
+        </div>
+        <div class="col-md-4">
+            <label for="firstShow" class="form-label">First Show</label>
+            <input type="time" class="form-control" id="firstShow" required>
+        </div>
+        <div class="col-md-4">
+            <label for="movieID" class="form-label">Movie ID</label>
+            <input type="number" class="form-control" id="movieID" min="1" required>
+        </div>
+        <div class="col-md-4">
+            <label for="cinemaHallId" class="form-label">Cinema Hall ID</label>
+            <input type="number" class="form-control" id="cinemaHallId" min="1" required>
+        </div>
+        <div class="col-md-4">
+            <label for="showsPrDay" class="form-label">Shows per Day</label>
+            <input type="number" class="form-control" id="showsPrDay" min="1" required>
+        </div>
+      <div class="col-12" style="margin-top:1em;">
+        <button id="btn-submit" class="btn btn-outline-dark">Add showing</button>
+      </div>
+    </form>
+    <image src="../../../images/Spin-1s-200px.gif" id="spinner" style="display: none;width:100px;" />
+    <div id="status" class="alert alert-primary" role="alert" style="display: none;margin-top: 0.5em;"></div>
+  </div>
+</template>
